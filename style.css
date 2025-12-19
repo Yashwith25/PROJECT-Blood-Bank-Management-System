@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+input[type=text], input[type=email], input[type=password], input[type=number], select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+input[type=submit] {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background: #0056b3;
+}
+ body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; } h2 { color: #333; } form input, form textarea { display: block; margin: 10px 0; padding: 10px; width: 300px; } input[type="submit"] { background-color: #5cb85c; color: white; border: none; cursor: pointer; } input[type="submit"]:hover { background-color: #4cae4c; } a { margin-right: 10px; } table { border-collapse: collapse; width: 80%; } table, th, td { border: 1px solid black; } th, td { padding: 8px; text-align: left; }
