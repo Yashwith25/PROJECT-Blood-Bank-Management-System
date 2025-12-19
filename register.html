@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff0f0;
+            color: #333;
+        }
+
+        .register-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(204, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h2 {
+            color: #cc0000;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #cc0000;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 95%;
+            padding: 10px;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a30000;
+        }
+
+        input[type="button"]{
+		width: 95%;
+            padding: 10px;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+		}
+
+        input[type="button"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>User Registration</h2>
+        <form method="post" action="register.php">
+            <input type="text" name="name" placeholder="Name" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Register"><br><br>
+			<input type="button" value="Back" onclick="window.location.href='index.html'">
+        </form>
+    </div>
+</body>
+</html>

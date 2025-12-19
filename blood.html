@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management Project</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blood Bank Management System</h1>
+        <a href="online_admin.html" class="admin-btn">Admin Panel</a>
+    </header>
+
+    <section class="container">
+        <h2>Register as a Donor</h2>
+        <form id="donorForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <select id="bloodGroup" required>
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+            <input type="text" id="contact" placeholder="Contact Number" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section class="container">
+        <h2>Search Blood Availability</h2>
+        <select id="searchBloodGroup">
+            <option value="">Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+        <button onclick="searchBlood()">Search</button>
+
+        <h3>Available Donors:</h3>
+        <ul id="donorList"></ul>
+    </section>
+
+    <!-- 🔙 Back to Home Button -->
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="index.html" style="
+            display: inline-block;
+            background-color: #c62828;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#b71c1c'" onmouseout="this.style.backgroundColor='#c62828'">
+            ← Back to Home
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
